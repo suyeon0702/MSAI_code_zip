@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.p1 {
+    font-family: "Noto Sans KR", serif;
+    font-optical-sizing: auto;
+    font-weight: bold; /* 700 */
+    font-style: italic;
+    font-size: 1.2em; /* em이 비율로 지정하는거라 좀 편하다: 부모 요소의 글자 크기에 대한 상대적인 크기*/
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px lightgrey;
+}
+
+.p2 {
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: oblique; /* 이탤릭체와 다르게 모양이 변형되지 않고 기계적으로 기울이기만 함*/
+    font-size: 1.2rem; /* em과 유사하나, 기준이 브라우저(root(html)) 요소*/
+}
+
+.p3 {
+    font-family: "Gamja Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+}

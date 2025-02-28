@@ -1,0 +1,52 @@
+* { /* 전체 선택자 */
+    margin: 0px;
+}
+
+#main-container { /* id 선택자 */
+    background-color: aquamarine;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container { /* class 선택자 -> .을 붙인다 */
+    background-color: white;
+    padding: 15px;
+}
+
+.margin-bottom20 { /* class 선택자 -> */ 
+    
+    margin-bottom: 20px;
+}
+
+/* 하나의 요소에 여러 개의 클래스를 공백으로 구분하여 적용 
+class="container margin-bottom20"으로 설정할 경우
+.container와 .margin-bottom20 둘 다 적용됨*/
+
+ul { /* type 선택자 */
+    list-style-type: circle;
+}
+
+[href="https://www.w3.org/"] /* 속성 선택자 */
+{
+    font-weight: bold;
+    color: red;
+}
+
+/* 가상클래스 선택자: HTML 문서의 특정 요소가 특정 상태에 있을 때
+                    스타일을 적용하기 위해 사용되는 선택자 */
+a:link { /* 링크가 걸려있을 때 */
+    text-decoration: none;
+}
+a:visited { /* 이미 방문했을 때 */
+    color: yellowgreen;
+}
+a:hover { /* 마우스 올렸을 때 */
+    background-color: lightpink;
+}
+a:active { /* 클릭하는 순간 */
+    background-color: purple;
+}
+div:hover { /* 마우스 올렸을 때 (div) */
+    background-color: lightgrey;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+h1 {
+    font-family: "Noto Sans KR", serif;
+    font-size: 400%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(160, 151, 219);
+    display: block;
+    text-align: center;
+    text-shadow: 3px 3px 3px lightgrey;
+}
+
+h3 {
+    font-family: "Noto Sans KR", serif;
+    font-size: 200%;
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
+    text-align: right;
+}
+
+#main-container { /* id 선택자 */
+    background-color: beige;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+.p1 {
+    font-family: "Noto Sans KR", serif;
+    font-optical-sizing: auto;
+    display: block; text-align: right; font-style: italic;
+    font-size: 0.8em; /* em이 비율로 지정하는거라 좀 편하다: 부모 요소의 글자 크기에 대한 상대적인 크기*/
+    text-decoration: underline;
+}
+
+.p3 {
+    font-family: "Gamja Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+}
