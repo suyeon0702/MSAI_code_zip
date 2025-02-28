@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <style>
+        #container {
+            /* width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch; */
+
+            /* 답안 */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5vw;
+            color: white;
+
+            /* background-image: url("~~"); */
+            background-image: url("files/space.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #container img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .text-overlay {
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* 완벽한 중앙 정렬 */
+            color: white;
+            font-size: 5vw;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- <img src="files/space.jpg" alt="space"> -->
+        <!-- <div class="text-overlay">🚀Space🧑‍🚀</div> -->
+        <div>🚀Space🧑‍🚀</div>
+    </div>
+</body>
+</html>

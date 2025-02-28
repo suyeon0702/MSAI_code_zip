@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fromis_9 갤러리</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Pretendard;
+        }
+        /* 전체 컨테이너 */
+        .gallery-container {
+            width: 80%;
+            margin: 30px auto;
+            border: 2px solid black;
+            background-color: rgb(226, 46, 46);
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        /* 탭 스타일 */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            border: 1px solid black;
+            padding: 8px 20px;
+            cursor: pointer;
+            background: white;
+        }
+
+        /* 갤러리 그리드 */
+        .gallery {
+            display: grid;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .gallery-item p {
+            margin-top: 5px;
+            /* font-weight: bold; */
+        }
+
+        @media screen and (min-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+
+        <h2 style="color: white; font-size: 30px; font-weight: bold; padding: 5px;">fromis_9 갤러리</h2>
+
+        <!-- 탭 버튼 -->
+        <div class="tabs">
+            <div class="tab">Albums</div>
+            <div class="tab">Youtube</div>
+            <div class="tab">X</div>
+            <div class="tab">Instagram</div>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/dlLQAOp7irzucOJvg9GYDQxwGtGlL7ZZafsmWisO_R2R4cimlfA1BtOVia3cDlOOPgsV-2zCZg1oEeYrQ9EYbowESVK44yE3t3XZdrtS3KKbr1Wfb813iNVM3_dGSVXkfYgihcAVDu0Ngfyd1OiQlg.webp" alt="이새롬">
+                <p>이새롬</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/KGfQVP7aES2QvcqvzbLm4YU57oQ816TuxciO2anZPwWadaQ1DhCqPvqXTsdGB-W9lPl-ZAKcy10-p0Hua5Tut8KA-m5O4OVatTnyE5VyQv2t6VTywpuJSaPB7r09k4-xFpbOJhK9Jb9m_-MRJ7PzEQ.webp" alt="송하영">
+                <p>송하영</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/b3ZvLDkf7CD65ha_liamQvuumomwlOzcfjMyDAg3-30xYnuBWnSwLZIEhjQU0hJk9zQmz_7q4DBaq5y3c1hunffTGUOfSPQwMJAiowTQZ2wnJITELwjxBMPIBPESRZePz7APGfB6KbuGyYSLCUSaxQ.webp" alt="박지원">
+                <p>박지원</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/iGTQ5sU47cUBZImI-P10VfeCORDDyx3euyBFO3aYYEEVNhD3MBM0WwRA4vUFNrrtXFo9zd9Stf5Fz9RDvuoc4ZBbHvc9BQH4Pg7jkkiGaW_JaTIGb39HtN3JaqHGMlLTHG6wbSg1NVT3-PM4QSdSYg.webp" alt="노지선">
+                <p>노지선</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/2lAmXe4YWH_jPMAi1N7qHeTXM3Ys4s33dBAxAOsszf0W_gAmZGszKFrDQvfyWwFQbmbJmGaigCCY6eNnVbSi-BR_ZBjTVJrrqy_E5dHUZ6eJVY_592n1nTxLrDEuEohgmqjU31NT-3NKaAggo2hRDA.webp" alt="이서연">
+                <p>이서연</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/dO0vYokNWMsxDNy5McH41NNapUOrgAupYKvfrxEEAnoDJKnu-db9_bAwr4Z3oEVyToY34LP1b2_1VhCjXxBkyFdqvy3bRZdYFSphJIGkyuSSn3OMKrSWMTk1h8NGLrw5G9WtyjgnhfsHFWPqPQjJdg.webp" alt="이채영">
+                <p>이채영</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/1qakF_TLlYSfTlcq2rquVtJFd_k1gRZ9T4hRXJYyHRK1zIafQWZD1BrzpAuK6VMiInfO6FeCOmNrE2tLZrlOM1G2pEt99Uvu0vBe3_qWyjj1neFa2HcwSTekS7kxLQdCNeHfiYGFATzQuAnnAjbxqg.webp" alt="이나경">
+                <p>이나경</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.namu.wiki/i/vSN5pHPu5_hEr2G8SBtLvU7dMpmjEAZTJdMxecvBE9a1fqtU_VJrIHCXnsP45CltNKln8u7j_daZNkczu_CU9TPq4C4Vzrm6RHDZ4huMeDasfUyr0HOjPEZTEImayXn-IlrmLM_4pI6_iLIRJKN0fA.webp" alt="백지헌">
+                <p>백지헌</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
