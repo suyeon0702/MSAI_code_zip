@@ -9,5 +9,21 @@
     <p>키보드를 누르면 어떤 키를 눌렀는지 표시</p>
     <div><input type="text" /></div>
     <div class="key"><!--키 표시--></div>
+    <script>
+      // 키를 표시할 요소 취득
+      const $key = document.querySelector(".key");
+      console.log($key);
+
+      // // 이벤트핸들러 정의 및 등록
+      // function showKey(e) {
+      //   $key.textContent = e.key;
+      // }
+      // document.querySelector("input").onkeyup = showKey;
+
+      document.querySelector("input").onkeyup = (e) => {
+        console.log(e.key);
+        $key.textContent = e.key;
+      };
+    </script>
   </body>
 </html>

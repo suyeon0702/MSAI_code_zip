@@ -25,14 +25,25 @@
         document.querySelector(".btn-number").innerHTML = 3;
       }
 
+      function fn(n) {
+        document.querySelector(".btn-number").textContent = n;
+      }
+
       const $btn1 = document.querySelector(".btn1");
-      $btn1.onclick = fn1; // 여기는 괄호를 쓰지 않는다. 함수 이름만 쓴다. (속성에 부여할 때)
+      // $btn1.onclick = fn1; // 여기는 괄호를 쓰지 않는다. 함수 이름만 쓴다. (속성에 부여할 때)
+      $btn1.onclick = function () {
+        fn(5);
+      };
 
       const $btn2 = document.querySelector(".btn2");
-      $btn2.onclick = fn2;
+      // $btn2.onclick = fn2;
+      $btn2.onclick = () => fn(6);
 
       const $btn3 = document.querySelector(".btn3");
-      $btn3.onclick = fn3;
+      // $btn3.onclick = fn3;
+      $btn3.onclick = () => {
+        fn(7);
+      };
     </script>
   </body>
 </html>
